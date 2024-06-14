@@ -28,7 +28,7 @@ def omikuji():
         "大凶"
     ]
     
-    return {"result" : omikuji_list[random.randint(0,9)]}
+    return {"result" : omikuji_list[random.randrange(10)]}
 
 from fastapi.responses import HTMLResponse #インポート
 
