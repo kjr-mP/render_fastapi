@@ -40,7 +40,7 @@ def index():
             <title>Some HTML in here</title>
         </head>
         <body>
-            <h1>Look ma! HTML!</h1>
+            <h1 style="background-color: #00ff00;" href="https://www.google.co.jp/" title="検索">ググる</h1>
         </body>
     </html>
     """
