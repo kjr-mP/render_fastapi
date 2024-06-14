@@ -40,7 +40,12 @@ def index():
             <title>Some HTML in here</title>
         </head>
         <body>
-            <h1 style="background-color: #00ff00;" href="https://www.google.co.jp/" title="検索">ググる</h1>
+            <h1 style="background-color: #00ff00;">見出しレベル1</h1>
+            <h2 style="color: #ffffff; background-color: #00ff00;">見出しレベル2</h2>
+            <p style="color: #ff0000">あいうえお</p>
+            <h2 style="color: #ffffff; background-color: #00ff00;">見出しレベル2</h2>
+            <p style="color: #ff0000">かきくけこ</p>
+            <a href="https://www.google.co.jp/" title="検索">ググる</a>
         </body>
     </html>
     """
