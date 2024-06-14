@@ -2,6 +2,8 @@ from typing import Optional
 
 from fastapi import FastAPI
 
+from fastapi.responses import HTMLResponse
+
 app = FastAPI()
 
 
@@ -30,10 +32,6 @@ def omikuji():
     
     return {"result" : omikuji_list[random.randrange(10)]}
 
-from fastapi.responses import HTMLResponse #インポート
-
-### コードいろいろ... ###
-
 @app.get("/index")
 def index():
     html_content = """
@@ -47,3 +45,7 @@ def index():
     </html>
     """
     return HTMLResponse(content=html_content, status_code=200)
+
+@app.post("/present")
+async def new_naming(present):
+    return {"response": f"サーバです。メリークリスマス！ {present}ありがとう。お返しはキャンディーです。"}
