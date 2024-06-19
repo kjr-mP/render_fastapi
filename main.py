@@ -53,4 +53,4 @@ def index():
 
 @app.post("/present")
 async def new_naming(present):
-    return {"response": f"POST {present}を受け取りました！"+{present}.length+"ですね"}
+    return {"response": f"POST {present}を受け取りました！"}
